@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+  font-family: arial, verdana, sans-serif;
+}
+
+.container {
+  margin: 10px auto;
+  width: 540px;
+  height: 100%;
+  border-color: red;
+  border-style: solid;
+}
+.reloj {
+  float: left;
+  font-size: 80px;
+  font-family: Courier, sans-serif;
+  color: #363431;
+}
+.boton {
+  outline: none;
+  border: 1px solid #363431;
+  color: black;
+  width: 125px;
+  height: 30px;
+  text-shadow: 0px -1px 1px black;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+.boton:active {
+  background-image: linear-gradient(#2c6f05, #3aad02);
+}
+.boton:hover {
+  box-shadow: 0px 0px 14px #3aad02;
+}
+
+.buttons {
+  width: 540px;
+  padding: 0px 4.5em;
+  margin: 50px 0;
+  display: block;
+  border-color: red;
+  border-style: solid;
+}
+
+textarea {
+  width: 535px;
+  height: 500px;
+  margin-top: 20px;
+  padding: 0;
+  font-family: arial, verdana, sans-serif;
+  font-size: 20pt;
+  resize: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+    margin: 10 auto;
+  }
+
+  .boton {
+    width: 76.6px;
+    font-size: 18px;
+  }
+
+  .buttons {
+    width: 350px;
+    padding: 0px 3.2em;
+  }
+
+  .reloj {
+    font-size: 52px;
+  }
+
+  textarea {
+    width: 345px;
+  }
+}
