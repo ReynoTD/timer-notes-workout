@@ -72,6 +72,30 @@ textarea {
   border-right: 1.5px solid black;
 }
 
+.media-icons {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a {
+  position: relative;
+  color: #111;
+  font-size: 40px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.media-icons a:hover {
+  transform: scale(1.5);
+}
+
 @media (max-width: 400px) {
   .container {
     width: 350px;
@@ -105,6 +129,10 @@ textarea {
     height: 600px;
     font-size: 18pt;
   }
+
+  .media-icons {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 500px) and (min-width: 400px) {
@@ -114,5 +142,10 @@ textarea {
 
   .notes {
     height: 800px;
+  }
+
+  .media-icons {
+    padding-top: 20px;
+    margin: 0 17.3em;
   }
 }
