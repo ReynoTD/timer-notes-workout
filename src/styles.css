@@ -13,51 +13,63 @@
   margin: 10px auto;
   width: 540px;
   height: 100%;
-  border-color: red;
-  border-style: solid;
+  border: 5px solid black;
+  color: black;
+  border-radius: 5%;
 }
+
+.timer {
+  margin: 0 3.29em;
+}
+
 .reloj {
   float: left;
   font-size: 80px;
-  font-family: Courier, sans-serif;
-  color: #363431;
+  font-family: arial, verdana, sans-serif;
+  color: black;
 }
+
 .boton {
   outline: none;
-  border: 1px solid #363431;
+  border: 3px solid black;
   color: black;
   width: 125px;
   height: 30px;
-  text-shadow: 0px -1px 1px black;
+  font-weight: bold;
   font-size: 20px;
   border-radius: 5px;
-  font-family: Helvetica;
+  font-family: arial, verdana, sans-serif;
+  text-shadow: 0.2px 0.1px;
   cursor: pointer;
 }
 .boton:active {
-  background-image: linear-gradient(#2c6f05, #3aad02);
+  background-image: linear-gradient(#195f99, #a7d9ff);
 }
 .boton:hover {
-  box-shadow: 0px 0px 14px #3aad02;
+  box-shadow: 0px 0px 14px #a7d9ff;
 }
 
 .buttons {
-  width: 540px;
-  padding: 0px 4.5em;
+  padding: 0px 4.3em;
   margin: 50px 0;
+  margin-left: 0;
   display: block;
-  border-color: red;
-  border-style: solid;
 }
 
 textarea {
-  width: 535px;
+  display: block;
+  width: 530px;
   height: 500px;
-  margin-top: 20px;
-  padding: 0;
   font-family: arial, verdana, sans-serif;
   font-size: 20pt;
+  font-weight: 600;
   resize: none;
+  border-radius: 2%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-top: 5px solid black;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
 }
 
 @media (max-width: 400px) {
@@ -66,21 +78,41 @@ textarea {
     margin: 10 auto;
   }
 
+  .timer {
+    margin: 0 2.63em;
+  }
+
   .boton {
     width: 76.6px;
     font-size: 18px;
   }
 
   .buttons {
-    width: 350px;
-    padding: 0px 3.2em;
+    padding: 0px 2.9em;
   }
 
   .reloj {
-    font-size: 52px;
+    font-size: 48px;
+  }
+
+  .notes {
+    margin-top: -10px;
+    height: 600px;
   }
 
   textarea {
-    width: 345px;
+    width: 340px;
+    height: 600px;
+    font-size: 18pt;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 400px) {
+  textarea {
+    height: 800px;
+  }
+
+  .notes {
+    height: 800px;
   }
 }
