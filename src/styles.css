@@ -13,8 +13,7 @@
   margin: 10px auto;
   width: 540px;
   height: 100%;
-  border: 5px solid black;
-  color: black;
+
   border-radius: 5%;
 }
 
@@ -67,9 +66,7 @@ textarea {
   border-radius: 2%;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
-  border-top: 5px solid black;
-  border-left: 1.5px solid black;
-  border-right: 1.5px solid black;
+  border: 5px solid black;
 }
 
 .media-icons {
