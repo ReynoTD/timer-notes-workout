@@ -7,45 +7,47 @@
     <title>Timer and Notes</title>
   </head>
   <body>
-    <h1 id="title">Timer and Notes</h1>
     <div class="container">
+      <h1 id="title">Timer and Notes</h1>
       <div class="timer">
         <div class="reloj" id="Horas">00</div>
         <div class="reloj" id="Minutos">:00</div>
         <div class="reloj" id="Segundos">:00</div>
         <div class="reloj" id="Centesimas">:00</div>
-        <div class="buttons">
-          <input
-            type="button"
-            class="boton"
-            id="inicio"
-            value="Start &#9658;"
-            onclick="inicio();"
-          />
-          <input
-            type="button"
-            class="boton"
-            id="parar"
-            value="Stop &#8718;"
-            onclick="parar();"
-            disabled
-          />
-          <input
-            type="button"
-            class="boton"
-            id="reinicio"
-            value="Reset &#8635;"
-            onclick="reinicio();"
-            disabled
-          />
-        </div>
       </div>
+      <div class="buttons">
+        <input
+          type="button"
+          class="boton"
+          id="inicio"
+          value="Start &#9658;"
+          onclick="inicio();"
+        />
+        <input
+          type="button"
+          class="boton"
+          id="parar"
+          value="Stop &#8718;"
+          onclick="parar();"
+          disabled
+        />
+        <input
+          type="button"
+          class="boton"
+          id="reinicio"
+          value="Reset &#8635;"
+          onclick="reinicio();"
+          disabled
+        />
+      </div>
+
       <div class="notes">
         <textarea
           class="form-control"
-          id="addTxt"
-          rows="8"
-          cols="60"
+          id="Txt"
+          rows="40"
+          cols="8"
+          placeholder="Coloca tu rutina aquí."
         ></textarea>
       </div>
     </div>
